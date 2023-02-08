@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  h1{
+    text-align: center;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    color: #058a29;
+  }
+  main {
+    width: 50%;
+    margin: 15px auto 0;
+  }
+  
+  #ppForm input[name="panjang"] {
+    grid-area: panjang;
+  }
+  
+  #ppForm input[name="lebar"] {
+    grid-area: lebar;
+  }
+  
+  #ppForm button {
+    grid-area: button;
+  }
+  
+  #ppForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "panjang panjang"
+      "lebar lebar"
+      "button button";
+  }
+  
+  #ppForm * {
+    margin: 7px;
+    padding: 7px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  #ppForm button {
+    outline: none;
+    background-color: #058a29;
+    color: white;
+    border: 5px solid transparent;
+    cursor: pointer;
+  }
+  
+  #ppForm input {
+    border: 3px solid #058a29;
+    outline: none;
+  }
+  
+  #tampilContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid gray;
+    background-color: #ebebeb;
+    color: #2f2f2f;
+    border-radius: 15px;
+  }
+  
+  #tampilContainer div {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #tampilContainer div * {
+    margin: 5px;
+  } 
